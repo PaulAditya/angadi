@@ -1,3 +1,4 @@
+import 'package:angadi/screens/filter_screen.dart';
 import 'package:angadi/screens/forgot_pass_screen.dart';
 import 'package:angadi/screens/login_screen.dart';
 import 'package:angadi/screens/main_screen.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         LoginScreen.routeName: (ctx) => LoginScreen(),
         ForgotPassScreen.routeName: (ctx) => ForgotPassScreen(),
         MainScreen.routeName: (ctx) => MainScreen(),
+        FilterScreen.routeName: (ctx) => FilterScreen(),
       },
       home: LoginScreen(),
     );

@@ -4,12 +4,14 @@ class CustomTextField extends StatelessWidget {
   final Widget icon;
   final String hintText;
   final bool obscured;
+  TextEditingController controller;
 
   CustomTextField({
     Key key,
     this.icon,
     this.hintText,
     this.obscured = false,
+    this.controller,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -18,6 +20,7 @@ class CustomTextField extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: width * .05),
       width: width,
       child: TextFormField(
+        controller: controller,
         style: TextStyle(
           color: Colors.white,
           fontWeight: FontWeight.w600,

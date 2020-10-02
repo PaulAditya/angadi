@@ -10,6 +10,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
+    TextEditingController _controller;
     return Scaffold(
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
@@ -52,6 +53,7 @@ class LoginScreen extends StatelessWidget {
                     CustomTextField(
                       icon: Icon(Icons.email),
                       hintText: 'Email',
+                      controller: _controller,
                     ),
                     SizedBox(
                       height: height * 0.02,

@@ -1,3 +1,4 @@
+import 'package:angadi/screens/filter_screen.dart';
 import 'package:flutter/material.dart';
 
 class SearchBar extends StatelessWidget {
@@ -23,7 +24,8 @@ class SearchBar extends StatelessWidget {
           suffixIcon: IconButton(
             icon: Icon(Icons.filter_list),
             color: Color(0xff6e7faa),
-            onPressed: () {},
+            onPressed: () =>
+                Navigator.of(context).pushNamed(FilterScreen.routeName),
           ),
           border: OutlineInputBorder(
             borderSide: BorderSide(width: 0.0, color: Colors.transparent),
